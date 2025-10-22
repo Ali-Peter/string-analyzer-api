@@ -90,7 +90,6 @@ Example using curl:
 
 curl -X DELETE https://string-analyzer-api-production-d164.up.railway.app/strings/Madam
 
----
 
 ## 🌿 Environment Variables
 Create a .env file at the root:
