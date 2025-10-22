@@ -58,40 +58,6 @@ Or test the hosted version at 👉 https://string-analyzer-api-production-d164.u
 - DELETE —————	/strings/:string_value	Delete a string
 - GET —————	/strings/filter-by-natural-language?query=	Filter strings using natural language
 
-## 🧠 Example Queries
-** POST — /strings
-**Description:** Add and analyze a new string  
-**Example using curl:**
-```bash
-curl -X POST https://string-analyzer-api-production-d164.up.railway.app/strings \
-  -H "Content-Type: application/json" \
-  -d '{"value":"Madam"}'
-```
----
-GET — /strings
-
-Description: Retrieve all stored strings
-Example URL:
-```bash
-https://string-analyzer-api-production-d164.up.railway.app/strings
-```
----
-GET — /strings/:string_value
-
-Description: Retrieve details of a specific string
-Example URL:
-```bash
-https://string-analyzer-api-production-d164.up.railway.app/strings/Madam
-```
----
-DELETE — /strings/:string_value
-
-Description: Delete a string
-Example using curl:
-```bash
-curl -X DELETE https://string-analyzer-api-production-d164.up.railway.app/strings/Madam
-```
-
 ## 🌿 Environment Variables
 Create a .env file at the root:
 
@@ -129,6 +95,39 @@ You can also test the hosted version on Railway:
 
 👉 Base URL: https://string-analyzer-api-production-d164.up.railway.app
 
+## 🧠 Example Queries
+** POST — /strings
+**Description:** Add and analyze a new string  
+**Example using curl:**
+```bash
+curl -X POST https://string-analyzer-api-production-d164.up.railway.app/strings \
+  -H "Content-Type: application/json" \
+  -d '{"value":"Madam"}'
+```
+---
+GET — /strings
+
+Description: Retrieve all stored strings
+Example URL:
+```bash
+https://string-analyzer-api-production-d164.up.railway.app/strings
+```
+---
+GET — /strings/:string_value
+
+Description: Retrieve details of a specific string
+Example URL:
+```bash
+https://string-analyzer-api-production-d164.up.railway.app/strings/Madam
+```
+---
+DELETE — /strings/:string_value
+
+Description: Delete a string
+Example using curl:
+```bash
+curl -X DELETE https://string-analyzer-api-production-d164.up.railway.app/strings/Madam
+```
 
 ## 🧩 Dependencies
 Package	Purpose
