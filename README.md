@@ -59,11 +59,38 @@ Or test the hosted version at 👉 https://string-analyzer-api-production-d164.u
 - GET —————	/strings/filter-by-natural-language?query=	Filter strings using natural language
 
 ## 🧠 Example Queries
-## Query	        Example
-- Palindromic strings	 —————   /strings/filter-by-natural-language?query=palindromic%20strings
-- Single word palindromic strings	 —————   /strings/filter-by-natural-language?query=all%20single%20word%20palindromic%20strings
-- Strings longer than 10 characters —————	/strings/filter-by-natural-language?query=strings%20longer%20than%2010%20characters
-- Palindromic strings that contain the first vowel —————	/strings/filter-by-natural-language?query=palindromic%20strings%20that%20contain%20the%20first%20vowel
+### POST — /strings
+**Description:** Add and analyze a new string  
+**Example using curl:**
+```bash
+curl -X POST https://string-analyzer-api-production-d164.up.railway.app/strings \
+  -H "Content-Type: application/json" \
+  -d '{"value":"Madam"}'
+---
+GET — /strings
+
+Description: Retrieve all stored strings
+Example URL:
+
+https://string-analyzer-api-production-d164.up.railway.app/strings
+
+---
+GET — /strings/:string_value
+
+Description: Retrieve details of a specific string
+Example URL:
+
+https://string-analyzer-api-production-d164.up.railway.app/strings/Madam
+
+---
+DELETE — /strings/:string_value
+
+Description: Delete a string
+Example using curl:
+
+curl -X DELETE https://string-analyzer-api-production-d164.up.railway.app/strings/Madam
+
+---
 
 ## 🌿 Environment Variables
 Create a .env file at the root:
