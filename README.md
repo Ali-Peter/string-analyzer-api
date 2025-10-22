@@ -1,6 +1,6 @@
 ## String Analyzer API
 
-🚀 **Live API:** [https://string-analyzer-api.up.railway.app](https://string-analyzer-api.up.railway.app)
+🚀 **Live API:** https://string-analyzer-api-production-d164.up.railway.app
 
 A lightweight RESTful API built with **Node.js**, **Express**, and **SQLite** that analyzes strings — checking for palindromes, word counts, unique characters, hashes, and even natural language filtering!
 
@@ -35,7 +35,7 @@ A lightweight RESTful API built with **Node.js**, **Express**, and **SQLite** th
 ### 1️⃣ Clone the repo
 
 ```bash
-git clone https://github.com/<your-username>/string-analyzer-api.git
+git clone https://github.com/Ali-Peter/string-analyzer-api.git
 cd string-analyzer-api
 
 
@@ -47,7 +47,7 @@ npm run dev
 
 Your app will be live at 👉 http://localhost:3000
 ```
-Or test the hosted version at 👉 https://string-analyzer-api.up.railway.app
+Or test the hosted version at 👉 https://string-analyzer-api-production-d164.up.railway.app
 
 
 ## 🔧 API Endpoints
@@ -59,11 +59,11 @@ Or test the hosted version at 👉 https://string-analyzer-api.up.railway.app
 -- GET	/strings/filter-by-natural-language?query=	Filter strings using natural language
 
 ## 🧠 Example Queries
--- Query	        Example
--- Palindromic strings	    /strings/filter-by-natural-language?query=palindromic%20strings
--- Single word palindromic strings	    /strings/filter-by-natural-language?query=all%20single%20word%20palindromic%20strings
--- Strings longer than 10 characters	/strings/filter-by-natural-language?query=strings%20longer%20than%2010%20characters
--- Palindromic strings that contain the first vowel	/strings/filter-by-natural-language?query=palindromic%20strings%20that%20contain%20the%20first%20vowel
+# -- Query	        Example
+# -- Palindromic strings	    /strings/filter-by-natural-language?query=palindromic%20strings
+# -- Single word palindromic strings	    /strings/filter-by-natural-language?query=all%20single%20word%20palindromic%20strings
+# -- Strings longer than 10 characters	/strings/filter-by-natural-language?query=strings%20longer%20than%2010%20characters
+# -- Palindromic strings that contain the first vowel	/strings/filter-by-natural-language?query=palindromic%20strings%20that%20contain%20the%20first%20vowel
 
 ## 🌿 Environment Variables
 Create a .env file at the root:
@@ -100,7 +100,7 @@ Expected Response:
 
 You can also test the hosted version on Railway:
 
-👉 Base URL: https://string-analyzer-api.up.railway.app
+👉 Base URL: https://string-analyzer-api-production-d164.up.railway.app
 
 
 ## 🧩 Dependencies
