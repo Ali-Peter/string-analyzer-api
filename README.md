@@ -68,7 +68,7 @@ DATABASE_NAME=string_analyzer.db
 ## 🧪 Testing Your Endpoints
 
 Use Postman or curl to test:
-
+```bash
 curl -X POST http://localhost:3000/strings \
   -H "Content-Type: application/json" \
   -d '{"value":"Madam"}'
@@ -87,7 +87,7 @@ Expected Response:
   },
   "created_at": "..."
 }
-
+```
 
 ## 🌐 Live Deployment
 
