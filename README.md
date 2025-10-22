@@ -59,7 +59,7 @@ Or test the hosted version at 👉 https://string-analyzer-api-production-d164.u
 -- GET	/strings/filter-by-natural-language?query=	Filter strings using natural language
 
 ## 🧠 Example Queries
-## -- Query	        Example
+- Query	        Example
 ## -- Palindromic strings	    /strings/filter-by-natural-language?query=palindromic%20strings
 ## -- Single word palindromic strings	    /strings/filter-by-natural-language?query=all%20single%20word%20palindromic%20strings
 ## -- Strings longer than 10 characters	/strings/filter-by-natural-language?query=strings%20longer%20than%2010%20characters
